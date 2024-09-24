@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1c1c1c;
+  padding: 5px 50px ;
+}
+
+.img-header {
+  max-width: 80px;
+}
+
+.ul-header {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+}
+
+.li-header {
+  font-size: 20px;
+  text-decoration: none;
+  color: #F0F0F0;
+}
+
+.li-header:hover {
+  color: #6A9AB0;
+}
