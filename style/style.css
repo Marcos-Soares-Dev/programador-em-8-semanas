@@ -172,28 +172,83 @@ button{
         font-size: 1rem;
     }
 
-    @media (max-width: 425px){
+    @media (min-width: 1367px) and (max-width: 1920px){
+        .box-section h2 {
+            font-size: 2.5rem;
+        }
+
+        .box-section p { 
+            font-size: 1.5rem;
+        }
+    }
+
+    @media (min-width: 1024px) and (max-width: 1360px){
+            
+        .box-section h2 {
+            font-size: 1.5rem;
+        }
+
+        .box-section p { 
+            font-size: 1rem;
+        }
+    }
+
+    @media (min-width: 800px) and (max-width: 1023px){
+            
+        .box-section h2 {
+            font-size: 1.1;
+        }
+
+        .box-section p { 
+            font-size: .9rem;
+        }
+    }    
+
+    @media (min-width: 600px) and (max-width: 768px){
+            
+        .box-section h2 {
+            font-size: 1.1rem;
+        }
+
+        .box-section p { 
+            font-size: .9rem;
+        }
+    }
+
+    @media (min-width: 510px) and (max-width: 599px){
+            
+        .box-section h2 {
+            font-size: 1.2rem;
+        }
+
+        .box-section p { 
+            font-size: .8rem;
+        }
+    }
+
+    @media (min-width: 425px) and (max-width: 509px){
+         
         .box-section {
             align-items: center;
+            background-image: url(../img/bg-mobile-768x880.png);
+            background-position: center;
             justify-content: flex-start;
-            text-align: center;
-            background-image: url('../img/bg-mobile-768x880.png');
-            background-position: bottom;
-            background-size: cover;
         }
 
         .box-section h2 {
+            font-size: 1.2rem;
             width: 100%;
             text-align: center;
         }
 
-        .box-section p {
-            width: 100%;        
+        .box-section p { 
+            font-size: .8rem;
+            text-align: center;
+            width: 100%;
         }
-
-
-        /*FOOTER --------------------------------------------------------------------*/
     }
+
+    /*FOOTER --------------------------------------------------------------------*/
     footer{
         background-color: #1c1c1c;
     }
