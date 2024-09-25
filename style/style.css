@@ -7,6 +7,11 @@
         box-sizing: border-box;
     }
 
+    body{
+        background-color: black;
+        
+    }
+
     /*HEADER ----------------------------------------------------------------------------------------*/
     .navbar {
         display: flex;
@@ -39,7 +44,107 @@
 
     /*SESSÃO1 --------------------------------------------------------------------------------------*/
 
+      
+.containerWell img{
+    width: 100%;
+    height: max-content;
+    z-index: 1;
+    margin-bottom: 5%;
+}
 
+.containerWell #form{
+    margin-top: 31%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 28rem;
+    height: 10rem;
+    z-index: 2;
+    margin-left: 230px;
+    
+}
+
+.containerWell button{
+    margin: 2px;
+    height: 48px;
+}
+
+.containerWell input{
+    margin: 2px;
+    height: 48px;
+}
+
+button{
+    cursor: pointer;
+}
+
+.containerWell button:hover{
+    transform: 1.6s;
+    opacity: 0.9;
+}
+
+
+
+.containerWell .headline h1{
+    
+    margin-left: 236px;
+    width: 522px;
+    position: absolute;
+    z-index: 2;
+   
+}
+
+.containerWell .headline p{
+    
+    margin-left: 236px;
+    width: 522px;
+    position: absolute;
+    z-index: 2;
+   
+}
+.containerWell .headline h3{
+    
+    margin-left: 236px;
+    width: 522px;
+    position: absolute;
+    z-index: 2;
+   
+}
+
+.containerWell h1{
+    padding-top: 10%;
+    padding-bottom: 5px;
+
+    font-weight: 200;
+    font-size: 32px;
+}
+
+.containerWell #firstSub{
+    padding-top: 26.5%;
+    margin-bottom: 5rem;
+  
+}
+.containerWell #secondSub{
+    margin-top: 5.5rem;
+}
+.containerWell p{
+    padding-top: 22%;
+    line-height: 16px;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: left;
+    width: 462px;
+}
+
+.containerWell #imagemLogo{
+    position: absolute;
+    z-index: 5;
+    width: 5rem;
+    padding-top: 2%;
+    margin-left:  236px;
+    margin-bottom: 5rem;
+}
 
 
     /*SESSÃO 2 ---------------------------------------------------------------------------------------*/
