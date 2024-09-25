@@ -1,0 +1,48 @@
+footer{
+    background-color: #1c1c1c;
+}
+footer .container{
+    display: flex;
+}
+
+footer .container ul{
+    width: 25%;
+}
+
+footer .container .logo{
+    max-width: 150px;
+    max-height: 150px;
+}
+
+footer .container .redes-sociais img{
+    max-width: 30px;
+    max-height: 30px;
+    margin-right: 7px;
+}
+
+footer .container ul>h3{
+    color: white;
+}
+
+footer .container a{
+    color: rgb(167, 167, 167);
+}
+
+footer .container li{
+    list-style-type: none
+}
+
+footer .container a{
+    text-decoration: none
+}
+
+footer .copy{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+}
+
+footer .copy p{
+    color: rgb(182, 180, 180);
+    font-size: 13px;
+}
