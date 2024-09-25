@@ -1,117 +1,117 @@
-/*GERAL ----------------------------------------------------------------------------------*/
-* {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #fff;
-    box-sizing: border-box;
-}
+    /*GERAL ----------------------------------------------------------------------------------*/
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #fff;
+        box-sizing: border-box;
+    }
 
-/*HEADER ----------------------------------------------------------------------------------------*/
-
-
+    /*HEADER ----------------------------------------------------------------------------------------*/
 
 
 
 
-/*SESSÃO1 --------------------------------------------------------------------------------------*/
+
+
+    /*SESSÃO1 --------------------------------------------------------------------------------------*/
 
 
 
 
-/*SESSÃO 2 ---------------------------------------------------------------------------------------*/
-.box-section {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    justify-content: center;
-    width: 100vw;
-    height: 100vh;
-    background-image: url('../img/BG\ Especialista\ Desk\ 1920x980\ -\ ALT\ \ 1.png');
-    background-size: cover;
-    background-position: calc();
-    padding: 40px;
-}
-
-.box-section h2 {
-    width: 50%;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.box-section p {
-    width: 50%;
-    white-space: pre-line;
-    font-size: 1rem;
-}
-
-@media (max-width: 425px){
+    /*SESSÃO 2 ---------------------------------------------------------------------------------------*/
     .box-section {
-        align-items: center;
-        justify-content: flex-start;
-        text-align: center;
-        background-image: url('../img/bg-especialist-sec2-1920x980px.png');
-        background-position: bottom;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+        background-image: url('/programador-em-8-semanas/img/bg-especialist-sec2-1920x980px.png');
         background-size: cover;
+        background-position: calc();
+        padding: 40px;
     }
 
     .box-section h2 {
-        width: 100%;
-        text-align: center;
+        width: 50%;
+        font-size: 1.5rem;
+        font-weight: bold;
     }
 
     .box-section p {
-        width: 100%;        
+        width: 50%;
+        white-space: pre-line;
+        font-size: 1rem;
     }
 
+    @media (max-width: 425px){
+        .box-section {
+            align-items: center;
+            justify-content: flex-start;
+            text-align: center;
+            background-image: url('');
+            background-position: bottom;
+            background-size: cover;
+        }
 
-    /*FOOTER --------------------------------------------------------------------*/
-}
-footer{
-    background-color: #1c1c1c;
-}
-footer .container{
-    display: flex;
-}
+        .box-section h2 {
+            width: 100%;
+            text-align: center;
+        }
 
-footer .container ul{
-    width: 25%;
-}
+        .box-section p {
+            width: 100%;        
+        }
 
-footer .container .logo{
-    max-width: 150px;
-    max-height: 150px;
-}
 
-footer .container .redes-sociais img{
-    max-width: 30px;
-    max-height: 30px;
-    margin-right: 7px;
-}
+        /*FOOTER --------------------------------------------------------------------*/
+    }
+    footer{
+        background-color: #1c1c1c;
+    }
+    footer .container{
+        display: flex;
+    }
 
-footer .container ul>h3{
-    color: white;
-}
+    footer .container ul{
+        width: 25%;
+    }
 
-footer .container a{
-    color: rgb(167, 167, 167);
-}
+    footer .container .logo{
+        max-width: 150px;
+        max-height: 150px;
+    }
 
-footer .container li{
-    list-style-type: none
-}
+    footer .container .redes-sociais img{
+        max-width: 30px;
+        max-height: 30px;
+        margin-right: 7px;
+    }
 
-footer .container a{
-    text-decoration: none
-}
+    footer .container ul>h3{
+        color: white;
+    }
 
-footer .copy{
-    display: flex;
-    justify-content: center;
-    background-color: rgb(0, 0, 0);
-}
+    footer .container a{
+        color: rgb(167, 167, 167);
+    }
 
-footer .copy p{
-    color: rgb(182, 180, 180);
-    font-size: 13px;
-}
+    footer .container li{
+        list-style-type: none
+    }
+
+    footer .container a{
+        text-decoration: none
+    }
+
+    footer .copy{
+        display: flex;
+        justify-content: center;
+        background-color: rgb(0, 0, 0);
+    }
+
+    footer .copy p{
+        color: rgb(182, 180, 180);
+        font-size: 13px;
+    }
