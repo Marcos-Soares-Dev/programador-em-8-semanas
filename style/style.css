@@ -8,10 +8,33 @@
     }
 
     /*HEADER ----------------------------------------------------------------------------------------*/
-
-
-
-
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #1c1c1c;
+        padding: 5px 50px ;
+      }
+      
+      .img-header {
+        max-width: 80px;
+      }
+      
+      .ul-header {
+        display: flex;
+        gap: 50px;
+        list-style: none;
+      }
+      
+      .li-header {
+        font-size: 20px;
+        text-decoration: none;
+        color: #F0F0F0;
+      }
+      
+      .li-header:hover {
+        color: #6A9AB0;
+      }
 
 
     /*SESSÃO1 --------------------------------------------------------------------------------------*/
@@ -115,3 +138,4 @@
         color: rgb(182, 180, 180);
         font-size: 13px;
     }
+
