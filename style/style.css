@@ -8,8 +8,7 @@
     }
 
     body{
-        background-color: black;
-        
+        background-color: black;        
     }
 
     /*HEADER ----------------------------------------------------------------------------------------*/
@@ -157,7 +156,7 @@ button{
         height: 100vh;
         background-image: url('../img/bg-especialist-sec2-1920x980px.png');
         background-size: cover;
-        background-position: calc();
+        background-position: center;
         padding: 40px;
     }
 
