@@ -20,10 +20,11 @@
         flex-direction: column;
         align-items: end;
         justify-content: center;
-        width: 100vw;
-        height: 100vh;
+        min-width: 100vw;
+        min-height: 100vh;
         background-image: url('../img/bg-especialist-sec2-1920x980px.png');
         background-size: cover;
+        background-attachment: fixed;
         background-position: center;
         padding: 40px;
     }
@@ -50,7 +51,7 @@
         }
     }
 
-    @media (min-width: 1024px) and (max-width: 1360px){
+    @media (min-width: 1024px) and (max-width: 1366px){
             
         .box-section h2 {
             font-size: 1.5rem;
@@ -75,15 +76,15 @@
     @media (min-width: 600px) and (max-width: 768px){
             
         .box-section h2 {
-            font-size: 1.1rem;
+            font-size: 1.5rem;
         }
 
         .box-section p { 
-            font-size: .9rem;
+            font-size: 1rem;
         }
     }
 
-    @media (min-width: 510px) and (max-width: 599px){
+    @media (min-width: 520px) and (max-width: 599px){
             
         .box-section h2 {
             font-size: 1.2rem;
@@ -94,13 +95,15 @@
         }
     }
 
-    @media (min-width: 425px) and (max-width: 509px){
+    @media (min-width: 320px) and (max-width: 519px){
          
         .box-section {
             align-items: center;
             background-image: url(../img/bg-mobile-768x880.png);
             background-position: center;
             justify-content: flex-start;
+            min-height: 750px;
+            padding: 20px;
         }
 
         .box-section h2 {
@@ -115,6 +118,54 @@
             width: 100%;
         }
     }
+
+    @media (min-width: 320px) and (max-width: 379px){
+         
+        .box-section {
+            align-items: center;
+            background-image: url(../img/bg-mobile-768x880.png);
+            background-position: center;
+            justify-content: flex-start;
+            min-height: 880px;
+        }
+
+        .box-section h2 {
+            font-size: 1.2rem;
+            width: 100%;
+            text-align: center;
+        }
+
+        .box-section p { 
+            font-size: .8rem;
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+    @media (min-width: 280px) and (max-width: 319px){
+         
+        .box-section {
+            align-items: center;
+            background-image: url(../img/bg-mobile-768x880.png);
+            background-position: center;
+            justify-content: flex-start;
+            min-height: 880px;
+            padding: 20px;
+        }
+
+        .box-section h2 {
+            font-size: 1.1rem;
+            width: 100%;
+            text-align: center;
+        }
+
+        .box-section p { 
+            font-size: .8rem;
+            text-align: center;
+            width: 100%;
+        }
+    }
+
 
     /*FOOTER --------------------------------------------------------------------*/
    
