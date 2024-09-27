@@ -4,167 +4,88 @@
         padding: 0;
         font-family: Arial, Helvetica, sans-serif;
         color: #fff;
-        box-sizing: border-box;
+        box-sizing: border-box;        
     }
 
-    
+    :root {
+        font-size: 16px;
+    }
 
+    .box-section {
+        display: flex;        
+        width: 100vw;
+        min-height: 100vh;       
+        justify-content: flex-end;
+        align-items: center;
+        padding: 2rem 3rem;
+        background-image: url('../img/bg-especialist-sec2-1920x980px.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;        
+    }
 
+    .especialis-info-box {
+        max-width: 55%;        
+    }    
+
+    .especialis-info-box h2 {             
+        font-size: clamp(1.5rem, 2rem, 3rem);
+    }   
+
+    .especialis-info-box p {
+        width: 100%;       
+        font-size: clamp(.8rem, 1rem, 1.5rem);
+        white-space: pre-line;
+    }
+
+    /*Media querrys*/
+
+    @media (max-width: 576px) {
+        .box-section {
+            background-image: url('../img/bg-mobile-768x880.png');
+            background-position: bottom;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 3rem;
+                       
+        }
+
+        .especialis-info-box {
+            max-width: 100%;
+            height: auto;     
+        }
+
+        .especialis-info-box p {
+            font-size: clamp(.8rem, 1rem, 1.5em);
+            text-align: center;
+        }
+        
+        .especialis-info-box h2 {             
+            font-size: clamp(1.3rem, 1.8rem, 2.5rem);
+            text-align: center;
+        }
+        
+        .backgtound-spacer {
+            min-height: 500px;
+            width: 100%;            
+        }
+    }
+    @media (max-width: 360px) {
+        .box-section {
+            padding: 15px;
+        }
+    }
+
+   
     /*SESSÃO1 --------------------------------------------------------------------------------------*/
 
       
 
     /*SESSÃO 2 ---------------------------------------------------------------------------------------*/
-    .box-section {
-        display: flex;
-        flex-direction: column;
-        align-items: end;
-        justify-content: center;
-        min-width: 100vw;
-        min-height: 100vh;
-        background-image: url('../img/bg-especialist-sec2-1920x980px.png');
-        background-size: cover;
-        background-attachment: fixed;
-        background-position: center;
-        padding: 40px;
-    }
-
-    .box-section h2 {
-        width: 50%;
-        font-size: 1.5rem;
-        font-weight: bold;
-    }
-
-    .box-section p {
-        width: 50%;
-        white-space: pre-line;
-        font-size: 1rem;
-    }
-
-    @media (min-width: 1367px) and (max-width: 1920px){
-        .box-section h2 {
-            font-size: 2.5rem;
-        }
-
-        .box-section p { 
-            font-size: 1.5rem;
-        }
-    }
-
-    @media (min-width: 1024px) and (max-width: 1366px){
-            
-        .box-section h2 {
-            font-size: 1.5rem;
-        }
-
-        .box-section p { 
-            font-size: 1rem;
-        }
-    }
-
-    @media (min-width: 800px) and (max-width: 1023px){
-            
-        .box-section h2 {
-            font-size: 1.1;
-        }
-
-        .box-section p { 
-            font-size: .9rem;
-        }
-    }    
-
-    @media (min-width: 600px) and (max-width: 768px){
-            
-        .box-section h2 {
-            font-size: 1.5rem;
-        }
-
-        .box-section p { 
-            font-size: 1rem;
-        }
-    }
-
-    @media (min-width: 520px) and (max-width: 599px){
-            
-        .box-section h2 {
-            font-size: 1.2rem;
-        }
-
-        .box-section p { 
-            font-size: .8rem;
-        }
-    }
-
-    @media (min-width: 320px) and (max-width: 519px){
-         
-        .box-section {
-            align-items: center;
-            background-image: url(../img/bg-mobile-768x880.png);
-            background-position: center;
-            justify-content: flex-start;
-            min-height: 750px;
-            padding: 20px;
-        }
-
-        .box-section h2 {
-            font-size: 1.2rem;
-            width: 100%;
-            text-align: center;
-        }
-
-        .box-section p { 
-            font-size: .8rem;
-            text-align: center;
-            width: 100%;
-        }
-    }
-
-    @media (min-width: 320px) and (max-width: 379px){
-         
-        .box-section {
-            align-items: center;
-            background-image: url(../img/bg-mobile-768x880.png);
-            background-position: center;
-            justify-content: flex-start;
-            min-height: 880px;
-        }
-
-        .box-section h2 {
-            font-size: 1.2rem;
-            width: 100%;
-            text-align: center;
-        }
-
-        .box-section p { 
-            font-size: .8rem;
-            text-align: center;
-            width: 100%;
-        }
-    }
-
-    @media (min-width: 280px) and (max-width: 319px){
-         
-        .box-section {
-            align-items: center;
-            background-image: url(../img/bg-mobile-768x880.png);
-            background-position: center;
-            justify-content: flex-start;
-            min-height: 880px;
-            padding: 20px;
-        }
-
-        .box-section h2 {
-            font-size: 1.1rem;
-            width: 100%;
-            text-align: center;
-        }
-
-        .box-section p { 
-            font-size: .8rem;
-            text-align: center;
-            width: 100%;
-        }
-    }
+    
 
 
     /*FOOTER --------------------------------------------------------------------*/
