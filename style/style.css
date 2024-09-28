@@ -43,107 +43,81 @@
 
     /*SESSÃO1 --------------------------------------------------------------------------------------*/
 
-      
-.containerWell img{
-    width: 100%;
-    height: max-content;
-    z-index: 1;
-    margin-bottom: 5%;
-}
-
-.containerWell #form{
-    margin-top: 31%;
-    position: absolute;
+    .containerWell {
+    
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        background-size: cover;
+        background-position: center;
+        background-image: url("../img/BG\ Ini\ Desk\ 1920x880\ 1.png");
+        background-size: cover;
+        background-position: center;
+        padding: 40px;
+       
+    }
+    .headline{
+        max-width: 90vh;
+        padding-left: 10em;
+    }
+    
+    #form{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 28rem;
-    height: 10rem;
-    z-index: 2;
-    margin-left: 230px;
+    max-width: 40vw;
+    }
     
-}
-
-.containerWell button{
-    margin: 2px;
-    height: 48px;
-}
-
-.containerWell input{
-    margin: 2px;
-    height: 48px;
-}
-
-button{
-    cursor: pointer;
-}
-
-.containerWell button:hover{
-    transform: 1.6s;
-    opacity: 0.9;
-}
-
-
-
-.containerWell .headline h1{
+    h1 {
+        font-size: 1.5rem;
+        text-align: left;
+    }
     
-    margin-left: 236px;
-    width: 522px;
-    position: absolute;
-    z-index: 2;
-   
-}
-
-.containerWell .headline p{
+    p {
+        font-size: 0.8rem;
+        line-height: 1.5;
+        padding: 5px;
+    }
     
-    margin-left: 236px;
-    width: 522px;
-    position: absolute;
-    z-index: 2;
-   
-}
-.containerWell .headline h3{
+    input, button{
+        padding: 20px;
+        margin: 2px 0;
+        border-radius: 5px;
+        color: #000000;
+    }
+
+    button:hover{
+        cursor: pointer;
+        background-color: #cfcdcd;
+    }
     
-    margin-left: 236px;
-    width: 522px;
-    position: absolute;
-    z-index: 2;
-   
-}
+    @media (max-width: 600px) {
+    
+        .containerWell {
+            background-color: #000000; 
+            color: #f4f4f4;
+        }
+        h1 {
+            font-size: 1.5rem; 
+        }
+    
+        p {
+            font-size: 0.9rem; /* Texto menor em telas pequenas */
+        }
+        
+        button {
+            font-size: 0.6rem; /* Texto menor em telas pequenas */
+            color: #000000;
+        }
 
-.containerWell h1{
-    padding-top: 10%;
-    padding-bottom: 5px;
+        .headline{
+            padding-left: 1em;
+        }
+        #form{
+            max-width: 70vw;
+        }
 
-    font-weight: 200;
-    font-size: 32px;
-}
-
-.containerWell #firstSub{
-    padding-top: 26.5%;
-    margin-bottom: 5rem;
-  
-}
-.containerWell #secondSub{
-    margin-top: 5.5rem;
-}
-.containerWell p{
-    padding-top: 22%;
-    line-height: 16px;
-    font-size: 12px;
-    font-weight: 400;
-    text-align: left;
-    width: 462px;
-}
-
-.containerWell #imagemLogo{
-    position: absolute;
-    z-index: 5;
-    width: 5rem;
-    padding-top: 2%;
-    margin-left:  236px;
-    margin-bottom: 5rem;
-}
+    }
+    
 
 
     /*SESSÃO 2 ---------------------------------------------------------------------------------------*/
@@ -214,6 +188,8 @@ button{
             font-size: .9rem;
         }
     }
+
+    
 
     @media (min-width: 510px) and (max-width: 599px){
             
