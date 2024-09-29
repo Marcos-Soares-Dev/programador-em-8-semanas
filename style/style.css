@@ -1,15 +1,19 @@
     /*GERAL ----------------------------------------------------------------------------------*/
     * {
         margin: 0;
-        padding: 0;
-        font-family: Arial, Helvetica, sans-serif;
+        padding: 0;        
         color: #fff;
         box-sizing: border-box;        
     }
 
-    :root {
-        font-size: 16px;
+    
+    h1 {
+        font-family: 'Bebas Neue';
     }
+    h2 {
+        font-family: 'Bebas Neue';
+    }
+    
 
     .box-section {
         display: flex;        
@@ -34,7 +38,7 @@
 
     .especialis-info-box p {
         width: 100%;       
-        font-size: clamp(.8rem, 1rem, 1.5rem);
+        font-size: clamp(1rem, 1.5rem, 2rem);
         white-space: pre-line;
     }
 
