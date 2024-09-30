@@ -1,0 +1,92 @@
+    /*GERAL ----------------------------------------------------------------------------------*/
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: "Bebas Neue";
+        color: #fff;
+        box-sizing: border-box;        
+    }
+
+    :root {
+        font-size: 16px;
+    }
+
+    .box-section {
+        display: flex;        
+        width: 100vw;
+        min-height: 100vh;       
+        justify-content: flex-end;
+        align-items: center;
+        padding: 2rem 3rem;
+        background-image: url('../img/bg-especialist-sec2-1920x980px.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;        
+    }
+
+    .especialis-info-box {
+        max-width: 55%;        
+    }    
+
+    .especialis-info-box h2 {             
+        font-size: clamp(1.5rem, 2rem, 3rem);
+    }   
+
+    .especialis-info-box p {
+        width: 100%;       
+        font-size: clamp(.8rem, 1rem, 1.5rem);
+        white-space: pre-line;
+    }
+
+    /*Media querrys*/
+
+    @media (max-width: 576px) {
+        .box-section {
+            background-image: url('../img/bg-mobile-768x880.png');
+            background-position: bottom;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 3rem;
+                       
+        }
+
+        .especialis-info-box {
+            max-width: 100%;
+            height: auto;     
+        }
+
+        .especialis-info-box p {
+            font-size: clamp(.8rem, 1rem, 1.5em);
+            text-align: center;
+        }
+        
+        .especialis-info-box h2 {             
+            font-size: clamp(1.3rem, 1.8rem, 2.5rem);
+            text-align: center;
+        }
+        
+        .backgtound-spacer {
+            min-height: 500px;
+            width: 100%;            
+        }
+    }
+    @media (max-width: 360px) {
+        .box-section {
+            padding: 15px;
+        }
+    }
+
+   
+    /*SESSÃO1 --------------------------------------------------------------------------------------*/
+
+      
+
+    /*SESSÃO 2 ---------------------------------------------------------------------------------------*/
+    
+
+
+    /*FOOTER --------------------------------------------------------------------*/
+   
