@@ -3,71 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/style.css">
+
+    <!--font Google-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <title>Programador em 8 Semanas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="./style/style.css">
+    <title>progamador-em-8-semanas</title>
 </head>
 <body>
-    <!--Header responsavel por Leonardo-->
-    <header class="container">
-        <nav class='navbar'>
-            <a href="#">
-                <img class="img-header" src='./img/logo.png' alt='Imagem logo' />
-            </a>
-            <ul class="ul-header">
-                <li><a class="li-header" href="#" >Inicio</a></li>
-                <li><a class="li-header" href="#">Cursos</a></li>
-                <li><a class="li-header" href="#">Sobre</a></li>
-                <li><a class="li-header" href="#">Contato</a></li>
+    <header>
+        <img src="./img/logo.png" alt="logomarca progamador em 8 semanas">
+        <nav>
+            <ul id="navOptions">
+                <li><a href="#formSection"><p>Inicio</p></a></li>
+                <li><a href="#aboutSection"><p>Sobre</p></a></li>
+                <li><a href="#contactSection"><p>Contato</p></a></li>
             </ul>
         </nav>
     </header>
     
-    <!--sessão inicial com Headline e formulario: Responsavel Well-->
-
-    <main class="containerWell">
-
-        <div class="headline">
-        <h1>Se torne um programador, ganhando salários acima de R$3 mil, mesmo que você nunca tenha visto um código na sua vida.</h1>
-        <p>Se torne um dos profissionais mais requisitados do mercado em 2024, sem precisar ter faculdade, trabalhando da sua casa, vindo de qualquer profissão e podendo ser <br> valorizado de verdade.</p>
-        <p id="firstSub">09, 10, 11 e 14 de Outubro • às 20h</p>
-        <p id="secondSub">100% online e gratuito </p>
-        <div id="form" >
-            <form method="post" action="" name="formulario-contato">
-                <input type="text"xit placeholder="Digite seu nome:">
-                <input type="email" placeholder="Digite seu E-mail:">
-                <input type="text" placeholder="DDD + Whatsapp:">
-                <button type="submit">QUERO ME TORNAR UM PROGRAMADOR</button>
-            </form>
-        </div>
-
-        </div>
-    </main>
-
-
-    <!--sesão sobre o autor do curso, com section para descrição da bio do autor: Responsavel Marcos-->
-
-    <section class="box-section" id="especialistSec">        
-        <div class="especialis-info-box">
-            <h2>Quem é Rodolfo Amori?</h2>
-            <p>
-                Rodolfo Mori saiu da Manutenção Elétrica para se tornar Programador.
-
+    <main>
+        <section class="formSection" id="formSection">
+            <h1>Se torne um <span class="degrade">programador, ganhando salários acima de R$3 mil</span>, mesmo que você nunca tenha visto um código na sua vida.</h1>
+            <p>Se torne um dos profissionais mais requisitados do mercado em 2024, sem precisar ter faculdade, trabalhando da sua casa, vindo de qualquer profissão e podendo ser valorizado de verdade.</p>
+            <p><i class="fas fa-calendar-alt"></i> 09, 10, 11 e 14 de Outubro • às 20h</p>
+            <p><i class="fas fa-video"></i> 100% online e gratuito</p>
+            <form id="leadForm" method="post" action="https://api.sheetmonkey.io/form/99CJckiZD5mJfD9vXBPDBR" name="formulario-contato">
+                <input type="text" id="leadName" name="leadName" placeholder="Digite se nome:" required>
+                <input type="email" id="leadEmail" name="leadEmail" placeholder="Digite seu e-mail" required>
+                <input type="tel" id="leadWhatsapp" name="leadWhatsapp" placeholder="DDD + Whatsapp"required>
+                <button type="submit" class="degradeBtn">quero me tornar um programador</button>                
+            </form>            
+        </section> 
+        
+        <section class="aboutSection" id="aboutSection">
+            <h2>Quem é <span class="degrade">Rodolfo Amori?</span></h2>
+            <p>Rodolfo Mori saiu da Manutenção Elétrica para se tornar Programador.
+                
                 Começou no mercado aos “trancos e barrancos”, mas depois de muito esforço, se tornou um Desenvolvedor Sênior.
-
+                
                 Já trabalhou com grandes empresas, como Santander, BTG Pactual, PI Investimentos e Toro Investimentos e hoje é desenvolvedor em uma Grande empresa da Austrália, ganhando assim em Dólar.
-
+                
                 Seu propósito é ajudar o máximo de pessoas a transformarem suas vidas por meio da programação, assim como ele fez, ganhando altos salários, trabalhando de onde quiser, só utilizando o seu computador.
                 
-                E ele vai te ajudar a conseguir, mesmo que você não saiba nada sobre o assunto ou mesmo que você já tenha começado a estudar, mas ainda não ingressou no mercado de trabalho
-            </p>       
-        </div>
-        <div class="backgtound-spacer"></div>  
-    </section>
-    <!--Footer com links para pagina de politica de privacidade, redes sociais e contato (tudo ficticio 
-    e o link da pagina de privacidade não precisa levar a lugar nenhum): Responsavel Isaias-->
-    <script src="./scripts/index.js"></script>
+                E ele vai te ajudar a conseguir, mesmo que você não saiba nada sobre o assunto ou mesmo que você já tenha começado a estudar, mas ainda não ingressou no mercado de trabalho</p>
+        </section>
+    </main>
+    
+    <footer>
+        <section class="contactSection" id="contactSection">
+            
+            <div class="brand">
+                <img src="./img/logo.png" id="logoFooter" alt="logomarca progamador em 8 semanas">
+                <div class="socialMmedia">
+                    <img src="./img/instagram.png" alt="instagram">
+                    <img src="./img/facebook.png" alt="facebook">
+                    <img src="./img/whatsapp.png" alt="whatsapp">
+                </div>
+            </div>
+            
+            
+            
+            <div class="privacityTerms">
+                <a href="#"><p>Politica de privacidade</p></a>
+                
+                <a href="#"><p>Termos de uso</p></a>
+            </div>
+
+            <div class="contacts">
+                
+                <span class="footerSpan">
+                    Email:
+                    suporte.dev@rodolfoamori.com.br
+                    Whatsapp:
+                    (85) 99999-9999
+                </span>                             
+            </div>            
+        </section>
+        
+    </footer>    
+    <!-- Popup container -->
+<!-- 
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" id="closePopup">&times;</span>
+            <h3>Informações Capturadas Pelo Formulario:</h3>
+            <p><strong>Nome:</strong> <span id="popupName"></span></p>
+            <p><strong>Email:</strong> <span id="popupEmail"></span></p>
+            <p><strong>WhatsApp:</strong> <span id="popupWhatsapp"></span></p>
+            <p>
+                
+                Olá, eu sou Marcos Soares e este é meu primeiro projeto! 
+                
+                Usei HTML, CSS e JavaScript para criar esta página. 
+                
+                Gostaria muito de receber seu feedback.
+                Somente dessa forma irei evoluir! Conto com sua critica :)
+        
+        Fale comigo no WhatsApp: <a href="https://api.whatsapp.com/message/WRWTKUB5CQWIL1?autoload=1&app_absent=0" target="_blank">(85) 99160-1505</a>
+
+        Confira o projeto no GitHub: 
+        <a href="https://github.com/edinoobgames/programador-8-semanas-marcos" target="_blank">github.com/edinoobgames/programador-8-semanas-marcos</a>
+        
+        O próximo passo é armazenar as informações deste formulário em um banco de dados!
+        
+        Obrigado pela sua atenção, te desejo tudo de bom! Até mais.
+    </p>
+</div>
+</div> -->
+
+
 </body>
 </html>

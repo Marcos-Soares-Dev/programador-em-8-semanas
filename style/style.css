@@ -1,239 +1,425 @@
-    /*GERAL ----------------------------------------------------------------------------------*/
-    * {
-        margin: 0;
-        padding: 0;        
-        color: #fff;
-        box-sizing: border-box;        
-    }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+    color: #fff;    
+}
 
-    
-    h1 {
-        font-family: 'Bebas Neue';
-    }
-    h2 {
-        font-family: 'Bebas Neue';
-    }
-    
+ :root {
+    font-size: 16px;
+    font-family: "roboto", sans-serif;
+    scroll-behavior: smooth;
+}
 
-    body{
-        background-color: black;        
-    }
+html, body {
+    overflow-x: hidden;
+}
 
-    /*HEADER ----------------------------------------------------------------------------------------*/
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #1c1c1c;
-        padding: 5px 50px ;
-      }
-      
-      .img-header {
-        max-width: 80px;
-      }
-      
-      .ul-header {
-        display: flex;
-        gap: 50px;
-        list-style: none;
-      }
-      
-      .li-header {
-        font-size: 20px;
-        text-decoration: none;
-        color: #F0F0F0;
-      }
-      
-      .li-header:hover {
-        color: #6A9AB0;
-      }
+h1,h2{
+    font-family: "Bebas Neue";
+    letter-spacing: .05rem;
+    font-size: clamp( 1.5rem, 2.2vw, 2.8rem);
+}
 
-      @media (max-width: 767px) {
-        .img-header {
-            max-width: 60px;
-        }
+p {
+    font-size: clamp( 1rem, 1.2vw, 1.5rem);
+}
 
-        .ul-header {
-            gap: 30px;
-        }
+header {
+    display: flex;
+    min-width: 100%;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 5rem;
+    background: linear-gradient(90deg, rgba(6,15,0,1) 0%, rgba(9,27,0,1) 35%, rgba(11,31,0,1) 100%);
+    width: 100vw;
+    position: fixed;
+}
 
-        .li-header {
-            font-size: 15px;
-        }
-      }
+header img {
+    max-width: 5vw; 
+}
 
-      @media (max-width: 576px) {
-        .img-header {
-            max-width: 50px;
-        }
+#navOptions {
+    display: flex;
+    gap: 2.5rem;     
+}
 
-        .ul-header {
-            gap: 25px;
-        }
+#navOptions li, a{
+    list-style: none;
+    color: #fff;
+    text-decoration: none;
+    transition: text-decoration 0.5s ease;
+}
 
-        .li-header {
-            font-size: 12px;
-        }
-      }
+#navOptions a:hover{
+    text-decoration: underline;
+}
 
+main {    
+    display: flex;
+    flex-direction: column;        
+}
 
-    /*SESSÃO1 --------------------------------------------------------------------------------------*/
-
-    .containerWell {
-    
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        background-size: cover;
-        background-position: center;
-        background-image: url("../img/BG\ Ini\ Desk\ 1920x880\ 1.png");
-        background-size: cover;
-        background-position: center;
-        padding: 40px;
-       
-    }
-    .headline{
-        max-width: 90vh;
-        padding-left: 10em;
-    }
-    
-    #form{
+.formSection {
     display: flex;
     flex-direction: column;
-    max-width: 40vw;
-    }
+    min-width: 100%;
+    min-height: 100vh;   
+    justify-content: center;    
+    gap: 1rem;    
+    background-image: url('../img/BG\ Ini\ Desk\ 1920x880\ 1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10rem 5rem 5rem 5rem;
+}
+
+.degrade{
+    background: linear-gradient(90deg, #ffffff, #4ea9ff, #00d084);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-family: "Bebas Neue";
+    letter-spacing: .05rem;
+    font-size: clamp( 1.5rem, 2.2vw, 2.8rem);
+}
+
+.formSection h1, p {
+    width: 50%;
+}
+
+.formSection i {
+    color: red;
+}
+
+#leadForm {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: .4rem;
+}
+
+#leadForm input, button{
+    padding: .6rem;
+    border-radius: 10px;
+    color: #000;
+}
+
+#leadForm button{    
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.5s ease;    
+    background: linear-gradient(90deg, rgba(45,128,207,1) 0%, rgba(68,156,238,1) 20%, rgba(6,193,124,1) 67%);
+    color: #000;
+    font-family: "Bebas Neue";    
+    font-size: clamp( 1rem, 1.2vw, 2.8rem);
+    letter-spacing: 0.05rem;
+    font-weight: bold;    
+}
+
+
+#leadForm button:hover{
+    background: linear-gradient(270deg, rgba(45,128,207,1) 0%, rgba(68,156,238,1) 20%, rgba(6,193,124,1) 67%);
+    transform: scale(1.1);
+    box-shadow: 1cap 1px 50px rgba(255, 255, 255, 0.2);
+} 
+
+.aboutSection {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    min-height: 100vh;    
+    justify-content: center;
+    align-items: last baseline;   
+    gap: 1rem;   
+    height: 100vh;    
+    background-image: url('../img/bg-especialist-sec2-1920x980px.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;    
+    padding: 18rem 5rem;
     
-    h1 {
-        font-size: 1.5rem;
-        text-align: left;
-    }
-    
-    p {
-        font-size: 0.8rem;
-        line-height: 1.5;
-        padding: 5px;
-    }
-    
-    input, button{
-        padding: 20px;
-        margin: 2px 0;
-        border-radius: 5px;
-        color: #000000;
+}
+
+.aboutSection p {
+    white-space: pre-line;
+}
+
+
+.contactSection {
+    display: flex;
+    min-width: 100%;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #081300;
+    padding: 1rem 5rem;
+}
+
+.brand {
+    display: flex;
+    flex-direction: column;    
+    align-items: center;    
+}
+
+.socialMmedia {
+    display: flex;    
+    gap: .5rem;    
+}
+
+#logoFooter {
+    width: 80px;
+    height: 80px;
+}
+
+.socialMmedia img{
+    width: 30px;
+    height: 30px;
+}
+
+.privacityTerms p {
+    width: 100%;
+}
+
+.footerSpan {
+    white-space: pre-line;
+}
+
+
+@media (max-width: 768px){
+    .formSection {
+       padding: 3rem 5rem;
+       min-height: 70vh;
+       background-position: calc(50% - 80px) calc(50% + 50px) ;
+       padding: 8rem 5rem 5rem 5rem;
     }
 
-    button:hover{
-        cursor: pointer;
-        background-color: #cfcdcd;
+    .formSection h1{
+        width: 54%;        
     }
-    
-    @media (max-width: 600px) {
-    
-        .containerWell {
-            background-color: #000000; 
-            color: #f4f4f4;
-            background-image: url("../img/BG\ Ini\ mibile\ 600x900\ 1.png");
-        }
-        h1 {
-            font-size: 1.5rem; 
-        }
-    
-        p {
-            font-size: 0.9rem; /* Texto menor em telas pequenas */
-        }
-        
-        button {
-            font-size: 0.6rem; /* Texto menor em telas pequenas */
-            color: #000000;
-        }
 
-        .headline{
-            padding-left: 1em;
-        }
-        #form{
-            max-width: 70vw;
-        }
-
+    .aboutSection{
+        padding: 3rem 5rem;
+        background-position: calc(50% + 120px);
     }
+
+    header img {
+        max-width: 6vw; 
+    }
+
+    .contactSection {       
+        padding: 1rem 2rem;
+        width: 100%;       
+}
+
+.contactSection p, .footerSpan{    
+    white-space: pre-line;
+ }
+
+}
+
+@media (max-width: 600px){
     
 
-
-    /*SESSÃO 2 ---------------------------------------------------------------------------------------*/
-    .box-section {
-        display: flex;        
-        width: 100vw;
-        min-height: 100vh;       
-        justify-content: flex-end;
-        align-items: center;
-        padding: 2rem 3rem;
-        background-image: url('../img/bg-especialist-sec2-1920x980px.png');
+    .formSection {
+        min-height: 135vh;
+        min-width: 100%;
+       background-image: url(../img/BG\ Ini\ mibile\ 600x900\ 1.png);
+       background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;        
+        justify-content: flex-start;
+        align-items: center;
+        padding: 8rem 3.5rem;
+        background-position: bottom;
+        background-size: auto;
+        background-color: #000;    
     }
 
-    .especialis-info-box {
-        max-width: 55%;        
-    }    
+    .formSection h1, p {
+        width: 100%;
+        text-align: center;
+    }
 
-    .especialis-info-box h2 {             
-        font-size: clamp(1.5rem, 2rem, 3rem);
+    #leadForm {        
+        width: 100%;        
+    }
+
+    .aboutSection {
+        background-image: url(../img/bg-mobile-768x880.png);
+        background-size: cover;
+         background-position: center;
+         background-repeat: no-repeat;
+         justify-content: flex-start;
+         align-items: center;
+         padding: 5rem 3.5rem;
+         min-height: 111vh;
+         background-position: bottom;
+        background-size: auto;
+        background-color: #000; 
+     }
+
+     .contactSection p, .footerSpan{
+       font-size: 14px;
+       white-space: pre-line;
+    }
+}
+
+
+@media (max-width: 480px){
+    
+    
+    header {        
+        padding: 0rem 2rem;        
+    }
+    
+    header img {
+        max-width: 5vw; 
+    }
+    
+    header img {
+        max-width: 10vw; 
+    }
+    
+    .formSection {       
+       min-height: 135vh;
+       padding: 7rem 2rem;          
+    }
+
+    .aboutSection{
+        min-height: 114vh;
+        padding: 3rem 2rem;             
+    }
+
+    .contactSection {
+        padding: 1rem 1rem;        
+     }
+
+    .contactSection p, .footerSpan{
+        font-size: 12px;
+        white-space: pre-line;
+     }
+
+     .degrade{
+        background: linear-gradient(90deg, #ffffff, #4ea9ff, #00d084);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
+      font-family: "Bebas Neue";
+        letter-spacing: .05rem;
+        font-size: clamp( 1.5rem, 2.2vw, 2.8rem);
+    }
+
+}
+
+@media (max-width: 460px){    
+    .contactSection {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto; /* Ajusta automaticamente a altura das linhas */
+        gap: 10px; /* Espaçamento entre os itens */
+        padding: 20px; /* Padding para dar mais espaçamento interno */
+    }
+
+    .brand {
+        grid-column: 1 / 2;
+        grid-row: 1 / 3; /* Ocupar as duas primeiras linhas */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .privacityTerms {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .contacts {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 360px){    
+    .formSection {       
+        min-height: 146vh;                
+     }
+
+     .aboutSection{
+        min-height: 130vh;
+    }
+           
+    }
+
+@media (max-width: 320px){    
+    header {        
+        padding: 0rem 1rem;        
+    }
+
+    header img {
+        max-width: 12vw; 
+    }
+
+    #navOptions {
+        gap: 2rem;
+    }
+    
+    .formSection {       
+        min-height: 155vh;
+     }
+
+
+
+     .aboutSection{
+        min-height: 143vh;
+    }           
     }   
 
-    .especialis-info-box p {
-        width: 100%;       
-        font-size: clamp(1rem, 1.5rem, 2rem);
-        white-space: pre-line;
-    }
-
-    /*Media querrys*/
-
-    @media (max-width: 576px) {
-        .box-section {
-            background-image: url('../img/bg-mobile-768x880.png');
-            background-position: bottom;
-            background-repeat: no-repeat;
-            background-size: cover;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            gap: 3rem;
-                       
-        }
-
-        .especialis-info-box {
-            max-width: 100%;
-            height: auto;     
-        }
-
-        .especialis-info-box p {
-            font-size: clamp(.8rem, 1rem, 1.5em);
-            text-align: center;
-        }
-        
-        .especialis-info-box h2 {             
-            font-size: clamp(1.3rem, 1.8rem, 2.5rem);
-            text-align: center;
-        }
-        
-        .backgtound-spacer {
-            min-height: 500px;
-            width: 100%;            
-        }
-    }
-    @media (max-width: 360px) {
-        .box-section {
-            padding: 15px;
-        }
-    }
-
-   
-    /*SESSÃO1 --------------------------------------------------------------------------------------*/
-
-      
-
-    /*SESSÃO 2 ---------------------------------------------------------------------------------------*/
-    
+    /* Popup container*/
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+    justify-content: center;
+    align-items: center;
+}
 
 
-    /*FOOTER --------------------------------------------------------------------*/
-   
+.popup-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;    
+    width: 100%;
+    text-align: center;
+    white-space: pre-line;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+}
